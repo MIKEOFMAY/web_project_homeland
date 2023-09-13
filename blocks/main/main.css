@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    width: 88%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (min-width:700px) {
+    .main {
+        display: block;
+        width: 100%;
+    }
+}
