@@ -2,11 +2,12 @@
     margin: 28px auto 32px 27px;
     width: 126px;
     height: 24px;
+    opacity: 1;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 680px) {
     .header__logo {
-        margin: 34px auto 41px;
+        margin: 34px auto 41px 0px;
         width: 173px;
         height: 33px;
     }
