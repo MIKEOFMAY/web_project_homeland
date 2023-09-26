@@ -2,7 +2,7 @@
 
 ## Deployed Project
 
-[Live Demo](https://github.com/MIKEOFMAY/web_project_homeland)
+[Live Demo](https://mikeofmay.github.io/web_project_homeland/)
 
 ## Languages and Technologies Used
 

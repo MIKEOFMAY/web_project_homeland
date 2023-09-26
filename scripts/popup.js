@@ -1,5 +1,6 @@
 const profileEdit = document.querySelector(".profile__edit-button");
 const popupContainer = document.querySelector(".popup");
+
 const popupClose = popupContainer.querySelector(".popup__close-button");
 const profileEditFormSave = popupContainer.querySelector(".popup__save-button");
 const username = document.querySelector(".profile__name");
@@ -8,7 +9,7 @@ const nameInput = popupContainer.querySelector("#popup__form_username");
 const jobInput = popupContainer.querySelector("#popup__form_about-me");
 
 function togglePopup() {
-    popupContainer.classList.toggle("popup_opened");
+    popupContainer.classList.toggle("popup__opened");
 }
 
 function handleProfileEditClick() {
