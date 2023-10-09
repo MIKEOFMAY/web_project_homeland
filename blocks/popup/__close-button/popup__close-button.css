@@ -7,7 +7,7 @@
     background-image: url("../../../images/close-icon.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
+    position: absolute;
     top: 0px;
     right: -220px;
     
