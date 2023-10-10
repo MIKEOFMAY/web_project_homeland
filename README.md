@@ -12,8 +12,9 @@
 
 ## Overview
 
-Designed according to this [Figma project brief](https://www.figma.com/file/89jWb7ipy9wiA4vVDIRKS8/Web_Brief_Sprint_5_ID-%7C-Di-Sekitar-A.S.-%7C-desktop-%2B-mobile?type=design&node-id=80-260&mode=design&t=ZsibMwJLfUdlDGVw-0)
+[Part 1](https://www.figma.com/file/89jWb7ipy9wiA4vVDIRKS8/Web_Brief_Sprint_5_ID-%7C-Di-Sekitar-A.S.-%7C-desktop-%2B-mobile?type=design&node-id=80-260&mode=design&t=ZsibMwJLfUdlDGVw-0)
 
+[Part 2](https://www.figma.com/file/9DHrs1fL4NvTGkQOsmcoxL/Web_Brief_Sprint_6_ID-%7C-Di-Sekitar-A.S.-%7C-desktop-%2B-mobile?node-id=1%3A72&mode=dev)
 ## Key Skills Utilized
 
 - HTML forms with JavaScript default value population and submit action
@@ -22,4 +23,4 @@ Designed according to this [Figma project brief](https://www.figma.com/file/89jW
 
 ## Possible Next Steps
 
--
+- Part III 
