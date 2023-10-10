@@ -1,8 +1,12 @@
 .profile__subheading {
     font-size: 14px;
     text-align: center;
-    margin-top: 14px;
-    margin-bottom: 0;
+    margin: 14px 0 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -10,13 +14,5 @@
         text-align: left;
         margin-top: 16px;
         font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 980px) {
-    .profile__subheading {
-        
-        
-        font-size: 22px;
     }
 }

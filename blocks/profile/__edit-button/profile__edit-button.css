@@ -9,6 +9,7 @@
     background-size: 7.5px 7.5px;
     background-repeat: no-repeat;
     background-position: 50% 40%;
+    padding: 0;
 }
 
 .profile__edit-button:hover {
@@ -21,7 +22,7 @@
         width: 24px;
         height: 24px;
         background-size: 10px 10px;
-        background-position: center;
+        
     }
 }
     
