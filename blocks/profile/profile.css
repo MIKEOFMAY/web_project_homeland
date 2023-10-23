@@ -11,6 +11,7 @@
     .profile {
         flex-direction: row;
         margin: 36.25px 0 46.25px;
+        justify-content: flex-start;
         
     }
 }
