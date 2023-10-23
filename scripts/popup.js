@@ -9,7 +9,7 @@ const nameInput = popupContainer.querySelector("#popup__form_username");
 const jobInput = popupContainer.querySelector("#popup__form_about-me");
 
 function togglePopup() {
-    popupContainer.classList.toggle("popup__opened");
+    popupContainer.classList.toggle("popup_opened");
 }
 
 function handleProfileEditClick() {
