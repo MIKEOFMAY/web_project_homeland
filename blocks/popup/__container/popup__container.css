@@ -4,12 +4,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    align-items: flex-end;
+    height: 322px;
 }
 
 @media screen and (min-width:700px) {
     .popup__container {
-        width: 33.5%;
+        width: 470px;
+        height: 330px;
+        align-items: flex-start;
     }
 }
