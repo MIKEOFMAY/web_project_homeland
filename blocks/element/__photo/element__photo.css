@@ -10,7 +10,7 @@
 @media screen and (min-width:700px) {
     .element__photo {
         max-height: 282px;
-        height: 100%;
+        
     }
 }
 
