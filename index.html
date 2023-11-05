@@ -1,110 +1,156 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Di Sekitar AS</title>
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
+
   <body class="page">
-    <section class="popup">
+    <section class="popup" id="profile-edit-popup">
       <div class="popup__container">
         <button type="button" class="popup__close-button"></button>
-        
+
         <div class="popup__box">
-          <h2 class="popup__title">Edit Profile</h2>
+          <h2 class="popup__title">Edit Profil</h2>
+
           <form
-            class="popup__form"
+            class="form"
             id="profile_edit_form"
             name="profile_edit_form"
+            novalidate
           >
-            <input type="text" class="popup__form-input" value="Name" id="popup__form_username" name="username">
-            <input type="text" class="popup__form-input" value="About me" id="popup__form_about-me" name="about-me">
-            <button type="submit" class="popup__save-button">Save</button>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Nama"
+              id="username-input"
+              name="username"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__input-error username-input-error"></span>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Tentang Saya"
+              id="about-me-input"
+              name="about-me"
+              minlength="2"
+              maxlength="200"
+              required
+            />
+            <span class="form__input-error about-me-input-error"></span>
+            <button type="submit" class="form__submit">Simpan</button>
+          </form>
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- type add card-->
+
+    <section class="popup" id="add-card-popup">
+      <div class="popup__container">
+        <button class="popup__close-button">&nbsp;</button>
+        <div class="popup__box">
+          <h2 class="popup__title">Tempat Baru</h2>
+          <form
+            class="form"
+            id="add-photo-form"
+            name="add-photo-form"
+            novalidate
+          >
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Judul"
+              id="image-title-input"
+              name="title"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <span class="form__input-error image-title-input-error"></span>
+            <input
+              type="url"
+              class="form__input"
+              placeholder="URL Gambar"
+              id="image-url-input"
+              name="image-url"
+              required
+            />
+            <span class="form__input-error image-url-input-error"></span>
+            <button class="form__submit">Simpan</button>
           </form>
         </div>
       </div>
     </section>
 
+    <section class="popup" id="photo-popup">
+      <div class="popup__photo">
+        <button class="popup__close-button popup__close-button_photo">
+          &nbsp;
+        </button>
+        <img class="popup__image" src=" " alt=" " />
+        <p class="popup__caption"></p>
+      </div>
+      >
+    </section>
+
     <div class="container">
       <header class="header">
-        <img class="header__logo" src="./images/header__logo.svg" alt="Around the U.S.">
+        <img
+          class="header__logo"
+          src="./images/header__logo.svg"
+          alt="Di Sekitar US"
+        />
         <div class="header__line"></div>
       </header>
 
       <main class="main">
         <section class="profile">
-          <img src="./images/profile.png" class="profile__avatar" alt="User Avatar">
+          <img
+            src="./images/profile.png"
+            class="profile__avatar"
+            alt="User Avatar"
+          />
           <div class="profile__info">
             <div class="profile__name-group">
               <h1 class="profile__name">Jacques Cousteau</h1>
-              <button class="profile__edit-button">
-                
-              </button>
+              <button type="button" class="profile__edit-button">&nbsp;</button>
             </div>
             <p class="profile__subheading">Penjelajah</p>
           </div>
-          <button type="button" class="profile__add-button">
-            
-          </button>
+          <button type="button" class="profile__add-button">&nbsp;</button>
         </section>
 
         <section class="elements">
-          <div class="element">
-            <img src="./images/yosemite-valley.png" alt="Lembah Yosemite" class="element__photo">
-            <div class="element__title">
-              <h2 class="element__text">Lembah Yosemite</h2>
-              <button type="button" class="element__heart">&nbsp;</button>
-            </div>
-          </div>
+          <!-- tempalte card-->
 
-          <div class="element">
-            <img src="./images/lake-louise.png" alt="Danau Louise" class="element__photo">
-            <div class="element__title">
-              <h2 class="element__text">Danau Louise</h2>
-              <button type="button" class="element__heart">&nbsp;</button>
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="./images/bald-mountains.png" alt="Pegunungan Gundul" class="element__photo">
-            <div class="element__title">
-              <h2 class="element__text">Pegunungan Gundul</h2>
-              <button type="button" class="element__heart">&nbsp;</button>
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="./images/latemar.png" alt="Latemar" class="element__photo">
-            <div class="element__title">
-              <h2 class="element__text">Latemar</h2>
-              <button type="button" class="element__heart">&nbsp;</button>
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="./images/vanoise-national-park.png" alt="Vanoise National Park" class="element__photo">
-            <div class="element__title">
-              <h2 class="element__text">Vanoise National Park</h2>
-              <button type="button" class="element__heart">&nbsp;</button>
-            </div>
-          </div>
-
-          <div class="element">
-            <img src="./images/lago-di-braies.png" alt="Lago di Braies" class="element__photo">
-            <div class="element__title">
-              <h2 class="element__text">Lago di Braies</h2>
-              <button type="button" class="element__heart">&nbsp;</button>
-            </div>
-          </div>
+          <template id="card">
+            <article class="element">
+              <img class="element__photo" src=" " alt=" " />
+              <img
+                class="element__delete-icon"
+                src="./images/delete.svg"
+                alt="Delet"
+              />
+              <div class="element__title">
+                <h2 class="element__text"></h2>
+                <button class="element__heart">&nbsp;</button>
+              </div>
+            </article>
+          </template>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__text">@Mike Tjahyono</p>
       </footer>
     </div>
-    <script src="./scripts/popup.js"></script>
-    
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
