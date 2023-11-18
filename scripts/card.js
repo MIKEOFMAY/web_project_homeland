@@ -1,5 +1,5 @@
 export default class Card {
-    constructor(cardData, templateSelector,handleCardClick){
+    constructor({cardData, templateSelector,handleCardClick, popupWithImage}){
 
 
     
@@ -7,6 +7,10 @@ export default class Card {
         this._title = cardData.name;
         this._templateSelector = templateSelector;
         this._handleCardClick = handleCardClick;
+
+        this._popupWithImage = popupWithImage;
+        
+        
 
     }
 
@@ -41,8 +45,12 @@ export default class Card {
         this._deleteIcon.addEventListener("click", () => this._handleDeleteCard());
         this._heartIcon.addEventListener("click", () => this._handlePhotoLike());
         
-        this._photo.addEventListener("click", () => this._handleCardClick());
+        this._photo.addEventListener("click", () => this._handleCardClick(this._title, this._photoLink));
+
+        
     }
+
+
 
 
 
@@ -55,5 +63,7 @@ export default class Card {
     _handlePhotoLike() {
         this._heartIcon.classList.toggle('element__heart_like');
     }
+
+  
 }
 
