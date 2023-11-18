@@ -2,7 +2,7 @@
 
 import { initialCards, validationConfig } from "./scripts/data.js";
 
-import Card from "./scripts/card.js";
+import Card from "./scripts/card.js"; 
 
 import Section from "./scripts/Section.js";
 
