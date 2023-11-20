@@ -1,8 +1,8 @@
-// import "../pages/index.css"
+import css from "./pages/index.css";
 
 import { initialCards, validationConfig } from "./scripts/data.js";
 
-import Card from "./scripts/card.js"; 
+import Card from "./scripts/card.js";
 
 import Section from "./scripts/Section.js";
 
@@ -28,14 +28,14 @@ const cardSection = new Section(
         cardData: item,
         templateSelector: "#card",
         handleCardClick: (name, link) => {
-         popupWithImage.open(name, link)
+          popupWithImage.open(name, link);
         }
       });
       const cardElement = card.createCard();
       return cardElement;
     }
   },
-  ".elements"  
+  ".elements"
 );
 
 /*
@@ -66,7 +66,7 @@ const profileEditForm = document.querySelector("#profile_edit_form");
 profileEditButton.addEventListener("click", function () {
   profileEditForm.reset();
   formValidators["profile_edit_form"].resetValidation();
-  handleProfileEditClick(); 
+  handleProfileEditClick();
   const profileEditPopup = new PopupWithForm(
     "#profile-edit-popup",
     handleProfileFormSubmit
@@ -81,21 +81,17 @@ const newCardButton = document.querySelector(".profile__add-button");
 const newCardPopup = document.querySelector("#add-card-popup");
 const newCardForm = newCardPopup.querySelector("#add-photo-form");
 
-  
-
 function handleAddCardFormSubmit(input) {
-    const card = new Card({
-        cardData: {name:input.title, link:input.link},
-        templateSelector: "#card",
-        handleCardClick: (name, link) => {
-            popupWithImage.open(name, link) 
-           }
-         });
+  const card = new Card({
+    cardData: { name: input.title, link: input.link },
+    templateSelector: "#card",
+    handleCardClick: (name, link) => {
+      popupWithImage.open(name, link);
+    }
+  });
 
-      cardSection.addItem(card.createCard());
+  cardSection.addItem(card.createCard());
 }
-
-
 
 newCardButton.addEventListener("click", function () {
   newCardForm.reset();
@@ -103,11 +99,11 @@ newCardButton.addEventListener("click", function () {
   const profileEditPopup = new PopupWithForm(
     "#add-card-popup",
     handleAddCardFormSubmit
-  );  
+  );
   profileEditPopup.open();
   profileEditPopup.setEventListeners();
 });
- 
+
 /** Form validation */
 const formValidators = {};
 
@@ -123,13 +119,11 @@ function validateForms(config) {
 
 validateForms(validationConfig);
 
-
-
-const card = new Card({
+/* const card = new Card({
   cardData: item,
   templateSelector: "#card",
   handleCardClick: (cardImage) => {
     popupWithImage.open(cardImage);
   },
   popupWithImage: popupWithImage
-});
+});*/
