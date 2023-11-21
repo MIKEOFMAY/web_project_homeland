@@ -35,3 +35,4 @@ export const validationConfig = {
   errorClass: "form__input-error_active"
 };
  
+ 

@@ -23,15 +23,15 @@ module.exports = {
     })
   ],
 
+
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    publicPath: ""
   },
   target: ["web", "es5"], // memastikan bahwa kode lengket Webpack juga kompatibel dengan ES5
   mode: "development",
   devServer: {
-    static: path.resolve(__dirname, "./dist"),
+    static: path.resolve(__dirname, "./src/public"),
     compress: true,
     port: 8080,
     open: true
@@ -48,23 +48,31 @@ module.exports = {
         // kecualikan folder node_modules, kita tidak perlu memproses file di dalamnya
         exclude: "/node_modules/"
       },
-
       {
         test: /\.(png|svg|jpg|jpeg|gif)/i,
-        type: "asset/resource"
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[hash].[ext]",
+              outputPath: "images"
+            }
+          }
+        ]
       },
       {
         test: /\.css$/i,
         use: [
-            'style-loader',
-            // ini jalan terlebih dahulu
-            'css-loader'
+          'style-loader',
+          // ini jalan terlebih dahulu
+          'css-loader'
         ]
-    },
-    {
-        test: /\.html$/i,
-        use: 'html-loader'
-    },
+      },
+      // {
+      //   test: /\.html$/i,
+      //   use: 'html-loader'
+      // },
+
     ]
   }
 };
