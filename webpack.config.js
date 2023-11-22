@@ -1,14 +1,4 @@
-/*const path = require('path');
-
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filena              : 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-};*/
-
-const HtmlWebpackPlugin = require("html-webpack-plugin"); // hubungkan plugin
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -16,19 +6,16 @@ module.exports = {
   entry: {
     main: "./src/index.js"
   },
-
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html" // jalur file ke index
+      template: "./src/index.html"
     })
   ],
-
-
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
-  target: ["web", "es5"], // memastikan bahwa kode lengket Webpack juga kompatibel dengan ES5
+  target: ["web", "es5"],
   mode: "development",
   devServer: {
     static: path.resolve(__dirname, "./src/public"),
@@ -38,41 +25,26 @@ module.exports = {
   },
   module: {
     rules: [
-      // ini adalah array berisi kaidah
-      // tambahkan objek berisi kaidah untuk Babel ke dalamnya
       {
-        // ekspresi regular yang mencari semua file js
         test: /\.js$/,
-        // semua file harus diproses oleh babel-loader
         loader: "babel-loader",
-        // kecualikan folder node_modules, kita tidak perlu memproses file di dalamnya
-        exclude: "/node_modules/"
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[hash].[ext]",
-              outputPath: "images"
-            }
-          }
-        ]
+        exclude: /node_modules/
       },
       {
         test: /\.css$/i,
         use: [
           'style-loader',
-          // ini jalan terlebih dahulu
           'css-loader'
         ]
       },
-      // {
-      //   test: /\.html$/i,
-      //   use: 'html-loader'
-      // },
-
+      {
+        test: /\.html$/i,
+        loader: 'html-loader'
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource"
+      },
     ]
   }
 };
