@@ -18,7 +18,7 @@ module.exports = {
   target: ["web", "es5"],
   mode: "development",
   devServer: {
-    static: path.resolve(__dirname, "./src/public"),
+    static: path.resolve(__dirname, "./public"),
     compress: true,
     port: 8080,
     open: true
@@ -37,10 +37,7 @@ module.exports = {
           'css-loader'
         ]
       },
-      {
-        test: /\.html$/i,
-        loader: 'html-loader'
-      },
+     
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource"
@@ -48,3 +45,4 @@ module.exports = {
     ]
   }
 };
+         

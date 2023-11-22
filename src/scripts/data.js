@@ -6,7 +6,7 @@ export const initialCards = [
   },
   {
     name: "Danau Louise",
-    link: "../images/lake-louise.png"
+    link: "/images/lake-louise.png"
   },
   {
     name: "Pegunungan Gundul",
@@ -22,7 +22,7 @@ export const initialCards = [
   },
   {
     name: "Lago di Braies",
-    link: "http://127.0.0.1:5503/images/yosemite-valley.png"
+    link: "/images/lago-di-braies.png"
   }
 ];
 
@@ -35,4 +35,4 @@ export const validationConfig = {
   errorClass: "form__input-error_active"
 };
  
- 
+  
