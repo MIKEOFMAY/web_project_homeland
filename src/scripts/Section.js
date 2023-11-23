@@ -9,10 +9,10 @@ export default class Section {
   }
 
   _renderer() {
-    console.log(this._items);
+    
     this._container.innerHtml = "";
     this._items.forEach((element) => {
-      let card = this._itemRenderer(element);
+      const card = this._itemRenderer(element);
       console.log(this._container.appendchild);
       this._container.append(card);
     });
