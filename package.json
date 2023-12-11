@@ -7,8 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open",
-    "dev2": "./node_modules/.bin/webpack"
+    "dev2": "./node_modules/.bin/webpack",
+
+
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MIKEOFMAY/web_project_homeland.git"
@@ -32,6 +37,7 @@
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "postcss-loader": "^7.3.3",
