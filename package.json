@@ -8,12 +8,9 @@
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open",
     "dev2": "./node_modules/.bin/webpack",
-
-
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MIKEOFMAY/web_project_homeland.git"

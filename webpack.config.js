@@ -43,6 +43,9 @@ module.exports = {
         type: "asset/resource"
       },
     ]
-  }
+  }, 
+  stats: {
+    errorDetails: true, // Add this line to show error details
+  },
 };
          
