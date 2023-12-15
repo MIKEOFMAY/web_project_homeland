@@ -2,13 +2,13 @@ import css from "./pages/index.css";
 
 import { initialCards, validationConfig } from "./scripts/data.js";
 
-import Card from "./scripts/card.js";
+import Card from "./scripts/Card.js";
 
 import Section from "./scripts/Section.js";
 
 import PopupWithForm from "./scripts/PopupWithForm.js";
 
-import PopupWithImage from "./scripts/PopupWithImages.js";
+import PopupWithImage from "./scripts/PopupWithImage.js";
 
 import FormValidator from "./scripts/FormValidator.js";
 import {

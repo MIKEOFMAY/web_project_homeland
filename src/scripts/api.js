@@ -74,7 +74,7 @@ class Api {
             })
             .catch((err) => {
                 return Promise.reject(err)
-            })
+            }) 
     }
 
     setUserAvatar({ avatar }) {

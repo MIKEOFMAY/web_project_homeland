@@ -1,4 +1,4 @@
-import api from "../components/Api.js"
+import api from "../scripts/api.js"
 
 export default class Card {
     constructor(data, cardSelector, handleCardClick, currentUserId, deleteSubmitHandler) {
