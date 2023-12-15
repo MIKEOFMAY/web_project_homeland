@@ -1,27 +1,27 @@
 export const initialCards = [
     {
       name: "Lembah Yosemite",
-      link: "../images/yosemite-valley.png"
+      link: "../images/gallery-yosemite-valley.jpg"
     },
     {
       name: "Danau Louise",
-      link: "/images/lake-louise.png"
+      link: "../images/gallery-lake-louise.jpg"
     },
     {
       name: "Pegunungan Gundul",
-      link: "../images/bald-mountains.png"
+      link: "../images/gallery-bald-mountains.jpg"
     },
     {
       name: "Gunung Latemar",
-      link: "../images/latemar.png"
+      link: "../images/gallery-latemar.jpg"
     },
     {
       name: "Taman Nasional Vanoise",
-      link: "./images/vanoise-national-park.png"
+      link: "../images/gallery-vanoise-national-park.jpg"
     },
     {
       name: "Lago di Braies",
-      link: "/images/lago-di-braies.png"
+      link: "../images/gallery-lago-di-braies.jpg"
     }
   ];
   
