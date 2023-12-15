@@ -1,11 +1,11 @@
-import Section from "../components/Section.js";
-import PopupWithImage from "../components/PopupWithImage.js";
-import PopupWithForm from "../components/PopupWithForm.js";
-import PopupWithSubmit from "../components/PopupWithSubmit.js";
-import Card from "../components/Card.js";
-import { FormValidator, validationSettings } from "../components/FormValidator.js";
-import UserInfo from "../components/UserInfo.js";
-import api from "../components/Api.js"
+import Section from "../scripts/Section.js";
+import PopupWithImage from "../scripts/PopupWithImage.js";
+import PopupWithForm from "../scripts/PopupWithForm.js";
+import PopupWithSubmit from "../scripts/PopupWithSubmit.js";
+import Card from "../scripts/Card.js";
+import { FormValidator, validationSettings } from "../scripts/FormValidator.js";
+import UserInfo from "../scripts/UserInfo.js";
+import api from "../scripts/api.js"
 import "./index.css";
 import { gallerySelector, popupEditUserInfo, popupEditAvatar, popupAddCard, popupOpenCardSelector, popupDeleteCardSelector } from "../utils/constants.js";
 

@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   devtool: "inline-source-map",
   entry: {
-    main: "./src/index.js"
+    main: "./src/pages/index.js"
   },
   plugins: [
     new HtmlWebpackPlugin({

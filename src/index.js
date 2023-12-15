@@ -1,22 +1,24 @@
+
+
 import css from "./pages/index.css";
 
 import { initialCards, validationConfig } from "./scripts/data.js";
 
 import Card from "./scripts/Card.js";
-
+ 
 import Section from "./scripts/Section.js";
-
+ 
 import PopupWithForm from "./scripts/PopupWithForm.js";
 
 import PopupWithImage from "./scripts/PopupWithImage.js";
 
-import FormValidator from "./scripts/FormValidator.js";
+import {FormValidator} from "./scripts/FormValidator.js";
 import {
   handleProfileEditClick,
   handleProfileFormSubmit
 } from "./scripts/utils.js";
 
-/** Popup event listeners */
+/** Popup event listeners */ 
 
 /** Card Functions */
 const popupWithImage = new PopupWithImage("#photo-popup");
