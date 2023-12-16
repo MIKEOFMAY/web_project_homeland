@@ -91,7 +91,7 @@ class Api {
 const api = new Api({
     baseUrl: "https://around.nomoreparties.co/v1/group-42",
     headers: {
-        authorization: "c56e30dc-2883-4270-a59e-b2f7bae969c6",
+        authorization: "ba8e4d36-51ba-4028-ae2c-0ea3de34b4db", 
         "Content-Type": "application/json"
     }
 });
