@@ -24,8 +24,11 @@ export default class Card {
         this._cardImage.src = this._link;
         this._cardImage.alt = this._title;
         this._element.querySelector(".card__title").textContent = this._title;
+        
         if (this._ownerId !== this._currentUserId) {
+            
             this._deleteButton.classList.add("card__btn-delete_hidden");
+            
         }
         const isLiked = this._data.likes.some((like) => {
             if (like._id === this._currentUserId) {
