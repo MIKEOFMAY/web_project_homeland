@@ -30,7 +30,7 @@ export default class Popup {
     }
 
     _mouseClick = (evt) => {
-        if (!evt.target.closest(".popup__content") && !evt.target.closest(".popup__content_content_card")) {
+        if (!evt.target.closest(".popup__content") && !evt.target.closest(".popup__content-content-card")) {
             this.close();
         }
     }

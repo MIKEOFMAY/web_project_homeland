@@ -1,4 +1,4 @@
-.profile__avatar_overlay {
+.profile__avatar-overlay {
     background: url(../../../../images/btn-edit.svg) center no-repeat;
     background-size: 26px 26px;
     width: 120px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .profile__avatar_overlay {
+    .profile__avatar-overlay {
         margin-right: 0;
     }   
 }
