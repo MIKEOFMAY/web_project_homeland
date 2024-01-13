@@ -1,6 +1,10 @@
 
 
-import css from "./pages/index.css";
+
+import css from "./pages/index.css";  
+
+// rest of your code
+
 
 import { initialCards, validationConfig } from "./scripts/data.js";
 

@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "[Live Demo](https://mikeofmay.github.io/web_project_homeland/)",
   "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open",
     "dev2": "./node_modules/.bin/webpack",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "start": "node --experimental-specifier-resolution=node ./src/index.js"
+
   },
   "repository": {
     "type": "git",
